@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+    <h2 id="inicio">Índice</h2>
+    <ul>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Listas ordenadas vs. Listas não ordenadas</a></li>
+        <li><a href="#tags">Tags e Atríbutos</a></li>
+        <li><a href="#ref">Referências</a></li>
+    </ul>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>O <i><b>Client</b></i> sempre inicia a comunicação com o servidor. O mais conhecido dele é o <b><i>navegador</i></b>.</p>
+    <p>Quando é preciso acessar um site, uma requisição é disparada pela internet para o computador no qual o site está hospedado ( <b><i>servidor</i></b> ).</p>
+    <p>Após enviar uma requisição, o cliente aguarda até que haja uma resposta do servidor e então a comunicação é encerrada.</p>
+    <p>Ao trabalhar com o client-side, temos que ter algumas preocupações extras, como <b><i>responsividade</i></b> e <b><i>compatibilidade</i></b> com navegadores.</p>
+    <p>Navegadores seguem o padrão <b>W3C</b>, mas sempre há diferenças entre eles.</p>
+    <ul><li>Clique no <a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp" target="_blank"><b>link</b></a> para entrar no site que nos mostra a compatibilidade entre tags HTML e os navegadores.</li></ul>
+    <p>O JavaScript pode ser utilizado no client-side, pois os navegadores possuem um módulo ( <a href="https://v8.dev/" target="_blank"><b>V8</b></a> ) capaz de interpretar a linguagem</p>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>O <b><i>Server</i></b> recebe uma requisição e devolve uma resposta para o cliente.</p>
+    <p>O servidor é um ou mais computadores com um único endereço. Neste computadores podem ser hospedados documentos, imagens, áudios, etc.</p>
+    <h4>Linguagens usadas no server-side:</h4>
+    <ul>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>C#</li>
+        <li>Ruby</li>
+        <li>Entre outras!</li>
+    </ul>
+
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>Um documento HTML é constituido principalmente por duas partes:</p>
+    <p><b>Head</b>: É o cérebro da página web. Não é visível para o usuário, mas contém informações cruciais sobre a página, como metadados, links e configurações de estilo. É carregado antes do conteúdo da página em si.</p>
+    <p><b>Body</b>: Engloba todo o conteúdo visível da página. É aqui que inserimos textos, imagens, links, formulários que os visitantes verão e irão interagir.</p>
+
+    <h2 id="listas">Listas ordenadas vs. Listas não ordenadas</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <h3>Listas Ordenadas:</h3>
+    <p>Lista numerada em ordem crescente. Tem várias finalidaes, uma receita por exemplo, em que a ordem importa para que a refeição seja feita da maneira correta.</p>
+    <p>No documento HTML, a tag utilizada para está lista é <b>ol</b>.</p>
+    <p><b>Exemplo:</b></p>
+    <ol>
+        <li>Quebrar 3 ovos.</li>
+        <li>Pega uma xícara de óleo</li>
+        <li>Bater no liquidificador.</li>
+    </ol>
+    <h3>Listas Não Ordenadas:</h3>
+    <p>Lista não numerada. Tem várias finalidades também. Construir um menu é uma delas.</p>
+    <p>No documento HTML, a tag utilizada para está lista é <b>ul</b>.</p>
+    <p><b>Exemplo:</b></p>
+    <ul>
+        <li>Jogar</li>
+        <li>Configurações</li>
+        <li>Sair</li>
+    </ul>
+
+    <h2 id="tags">Tags e Atríbutos</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p><b>Tags</b>: Funcionam como instruções que ditam a estrutura e comportamento de uma página web.</p>
+    <h4>Algumas Tags:</h4>
+    <ul>
+        <li><b>title</b>: Define o título da página que é exibida na barra de título do navegador. Parte vital para otimização de mecanismos de buscas.</li>
+        <li><b>i</b>: Deixa o texto em itálico.</li>
+        <li><b>strong</b>: Deixa o texto em negrito.</li>
+        <li><b>u</b>: Define o texto sublinhado.</li>
+        <li><b>h#</b>: # = número. Títulos e Subtítulos. Quando maior o número, menor sua hierarquia.</li>
+        <li><b>p</b>: Define um paragrafo.</li>
+        <li><b>blockquote</b>: Define uma citação.</li>
+        <li><b>mark</b>: Marca o texto.</li>
+        <li><b>sup</b>: Define o texto como sobrescrito.</li>
+        <li><b>a</b>: Cria um link para uma outra página.</li>
+        <li><b>hr</b>: Insere uma linha horizontal na página.</li>
+    </ul>
+    <p><b>Atríbutos</b>: São propriedades que uma tag pode ter. Existem os atríbutos mais gerais e as específicas de tags.</p>
+    <h4>Alguns Atríbutos:</h4>
+    <ul>
+        <li><b>id</b>: Identificador de elemento. Útil ao usar JavaScript.</li>
+        <li><b>style</b>: Serve para colocar comandos CSS diretamente na tag.</li>
+        <li><b>class</b>: Serve para padronizar as tags de acordo com uma classe. Utilizado no CSS.</li>
+        <li><b>type</b>: Altera o tipo de entrada. <u>Tag específica</u>: <b>input</b></li>
+        <li><b>src</b>: Caminho até a imagem que queremos inserir na página. <u>Tag específica</u>: <b>img</b></li>
+        <li><b>width</b>: Altera a largura da imagem. <u>Tag específica</u>: <b>img</b></li>
+        <li><b>href</b>: Referência o destino do link. <u>Tag específica</u>: <b>a</b></li>
+        <li><b>target</b>: Define se o link será aberto na mesma aba ou em uma outra. <u>Tag específica</u>: <b>a</b></li>
+    </ul>
+
+    <h2 id="ref">Referências</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p><a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215" target="_blank">HTTP: Cliente e Servidor - DevMedia</a></p>
+    <p><a href="dio.me" target="_blank">Digital Innovation One</a></p>
+
+</body>
+</html>
